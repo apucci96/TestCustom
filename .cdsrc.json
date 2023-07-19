@@ -1,0 +1,27 @@
+{ 
+    "[development]": { 
+        "auth": { 
+            "passport": { 
+                "strategy": "mock", 
+                "users": { 
+                    "test.viewer@tester.sap.com": { 
+                        "password": "initial", 
+                        "ID": "testviewer", 
+                        "userAttributes": { 
+                            "email": "test.viewer@tester.sap.com" 
+                        }, 
+                        "roles": ["TestViewer"] 
+                    }, 
+                    "test.manager@tester.sap.com": { 
+                        "password": "initial", 
+                        "ID": "testmanager", 
+                        "userAttributes": { 
+                            "email": "test.manager@tester.sap.com" 
+                        }, 
+                        "roles": ["TestManager"] 
+                    } 
+                } 
+            } 
+        } 
+    } 
+}

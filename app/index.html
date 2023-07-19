@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/global.css" rel="stylesheet">
+    <title>Interfaz Test1</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Busqueda Personas</h2>
+                <div class="grid-busqueda">
+                    <input type="text" id="persona_dni" placeholder="Numero de Documento...">
+                    <input type="text" id="persona_ape" placeholder="Apellido y/o Nombre...">
+                </div>
+                <button type="button" id="cargarPersona" onclick="cargarTabla(this.id)" class="busqueda-button">Buscar Personas</button>
+                <h2>Tabla Personas</h2>
+                <div class="grid-personas" id="tablePersonas">
+                    <div class="grid-persona-header">
+                        <h3>DNI</h3>
+                    </div>
+                    <div class="grid-persona-header">
+                        <h3>Apellido</h3>
+                    </div>
+                    <div class="grid-persona-header">
+                        <h3>Nombre</h3>
+                    </div>
+                    <div class="grid-persona-header">
+                        <h3>Empresa</h3>
+                    </div>
+                    <div class="grid-persona-header">
+                        <h4>Acciones</h4>
+                    </div>
+                </div>
+                <hr class="rounded">
+                <button type="button" id="crearPersona" onclick="crearRegistro(this.id)" class="busqueda-button">Registrar Persona</button>
+                <div id="formCrearPersona" class="grid-personas" style="display: none">
+                    <input type="text" id="crearPersona_id"     placeholder="ID..." disabled>
+                    <input type="text" id="crearPersona_dni"    placeholder="Numero de Documento...">
+                    <input type="text" id="crearPersona_nom"    placeholder="Nombre...">
+                    <input type="text" id="crearPersona_ape"    placeholder="Apellido...">
+                    <select id="crearPersona_emp">
+                        <option value="" selected disabled >Seleccionar empresa...</option>
+                    </select>
+                    <button id="crearPersona_confirmar" onclick="crearNuevaPersona();" class="busqueda-button">Crear</button>
+                </div>
+            </article>
+            <article>
+                <h2>Busqueda Empresas</h2>
+                <div class="grid-busqueda">
+                    <input type="text" id="empresa_nom" placeholder="Nombre de Empresa..." disabled>
+                </div>
+                <button type="button" id="cargarEmpresa" onclick="cargarTabla(this.id)" class="busqueda-button">Buscar Empresas</button>
+                <h2>Tabla Empresas</h2>
+                <div class="grid-empresas" id="tableEmpresas">
+                    <div class="grid-empresas-header">
+                        <h3>Empresa</h3>
+                    </div>
+                    <div class="grid-empresas-header">
+                        <h4>Acciones</h4>
+                    </div>
+                </div>
+                <hr class="rounded">
+                <button type="button" id="crearEmpresa" onclick="crearRegistro(this.id)" class="busqueda-button">Registrar Empresa</button>
+                <div id="formCrearEmpresa" class="grid-empresas" style="display: none">
+                    <input type="text" id="crearEmpresa_id"     placeholder="ID..." disabled>
+                    <input type="text" id="crearEmpresa_nom"    placeholder="Nombre de Empresa...">
+                    <button id="crearEmpresa_confirmar" onclick="crearNuevaEmpresa();" class="busqueda-button">Crear</button>
+                </div>
+            </article>
+            <article>
+                <h2>Tabla Facturas</h2>
+            </article>
+        </section>
+    </main>
+</body>
+<script src="js/global.js"></script>
+</html>

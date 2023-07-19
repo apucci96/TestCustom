@@ -1,0 +1,31 @@
+{
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.TestViewer",
+      "description": "TestViewer"
+    },
+    {
+      "name": "$XSAPPNAME.TestManager",
+      "description": "TestManager"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "TestViewer",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.TestViewer"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "TestManager",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.TestManager"
+      ],
+      "attribute-references": []
+    }
+  ]
+}
