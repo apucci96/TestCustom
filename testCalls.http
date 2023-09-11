@@ -1,0 +1,11 @@
+###Get Empresa
+GET https://19a7dc72trial-trial.integrationsuitetrial-apim.us10.hana.ondemand.com/19a7dc72trial/test-custom/testing-cap/Empresa
+
+###Crear Empresa
+POST https://19a7dc72trial-trial.integrationsuitetrial-apim.us10.hana.ondemand.com/19a7dc72trial/test-custom/testing-cap/Empresa
+Content-Type: application/json;IEEE754Compatible=true
+
+{"ID":4, "nombre": "Sancor22"}
+
+###Eliminar Empresa
+DELETE https://19a7dc72trial-trial.integrationsuitetrial-apim.us10.hana.ondemand.com/19a7dc72trial/test-custom/testing-cap/Empresa(4)

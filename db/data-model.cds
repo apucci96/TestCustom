@@ -1,7 +1,7 @@
 namespace test1;
 using { managed } from '@sap/cds/common';
 
-entity Persona : managed {
+entity Persona {
     key ID      : Integer;
     apellido    : localized String;
     nombre      : localized String;
@@ -9,7 +9,7 @@ entity Persona : managed {
     empresa     : Association to Empresa;
 }
 
-entity Empresa : managed {
+entity Empresa{
     key ID  : Integer;
     nombre  : localized String;
 }
